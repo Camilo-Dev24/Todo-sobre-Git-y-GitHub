@@ -6,12 +6,16 @@ Despues, para activar git usamos el comando git init y se inicia en una carpeta 
 
 Después se escribe en VS Code. Se abre el archivo desde la terminal con el comando code ensayo.txt
 
-A continuación, se escribe los datos o lo que sea que estara dentro del archivo .txt
+A continuación, se escribe los datos o lo que sea que estará dentro del archivo .txt
 
 Para  saber el estado de nuestros documentos en git usamos git status, y nos muestra que debemos añadir.
 
 Para añadir el archivo que creamos, usamos git add . (este es para ñadir todos los archivos).
 Después para dejar el mensaje-commit, utilizamos el comando git commit -m "el mensaje a dejar".
-Recordar que los mesnajes siempre van dentro de comillas. 
+Recordar que los mensajes siempre van dentro de comillas. 
 
-Para guardar los cambios en VS Code usamos Control + S, para crear un nuevo archivo control + N y contro + O para elegir un archivo
+Para guardar los cambios en VS Code usamos Control + S, para crear un nuevo archivo control + N y contro + O para elegir un archivo que tengamos. 
+
+Continuando con git, si queremos hacer comparación de cambios entre una versión antigua y otra reciente, 
+usamos el comando git diff commit A commit B. Para tener el ID de los commit, primero usamos el comando git log, 
+luego copiamos con click derecho los Id que queramos comparar (se recomienda poner el más viejo primero para que la comparacón sea más intuitiva)
