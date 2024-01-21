@@ -54,3 +54,6 @@ y es como si nada hubiera pasado, pero, quedamos con el commit o con una versió
 y para volver a ella solo usamos el commit nuevo que conseguimos con git checkout.  También sirve por si solo queremos mirar cambios anteriores,
 por si tenemos algun error en el nuevo, solo miramos con el ID al que queremos y volvemos con el master. es muy funcional. 
 
+git reset commit --soft, es para eliminar el historial y los registros e git, pero quedan cambios en el staging que se le pueden aplicar a un nuevo commit.
+git reset commit --hard, elimina todo, hay que tener cuidado. elimina histotial, staging  la información de los commit  ponemos el commit al que queremos que se restaure y borra todo lo demás. 
+
