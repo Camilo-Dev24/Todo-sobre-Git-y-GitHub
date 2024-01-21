@@ -54,6 +54,14 @@ y es como si nada hubiera pasado, pero, quedamos con el commit o con una versió
 y para volver a ella solo usamos el commit nuevo que conseguimos con git checkout.  También sirve por si solo queremos mirar cambios anteriores,
 por si tenemos algun error en el nuevo, solo miramos con el ID al que queremos y volvemos con el master. es muy funcional. 
 
-git reset commit --soft, es para eliminar el historial y los registros e git, pero quedan cambios en el staging que se le pueden aplicar a un nuevo commit.
-git reset commit --hard, elimina todo, hay que tener cuidado. elimina histotial, staging  la información de los commit  ponemos el commit al que queremos que se restaure y borra todo lo demás. 
+el comando git reset commit --soft, es para eliminar el historial y los registros e git, pero quedan cambios en el staging que se le pueden aplicar a un nuevo commit.
+el comando git reset commit --hard, elimina todo, hay que tener cuidado. elimina histotial, staging  la información de los commit  ponemos el commit al que queremos que se restaure y borra todo lo demás. 
 
+el comando git rm <archivo> elimina el archivo de nuestro disco-carpeta, pero deja el historial en git, por lo que podemos abrirlo en VS Code y hacerle cambios, e inclusive volver a gaurdarlo en la carpeta de donde lo borramos.
+
+con el comando git rm <archivo> --cached, elimina el archivo txt, html, etc de git, pero no de nuestro pc-escritotio. Esto es por si no vamos a trabajr más con ese archivo, 
+ni le haremos más cambios o más commits. Si lo queremos añadir de nuevo es solo dar git add .
+
+con git rm <archivo> force, lo borra del escritorio y de git, aunque deja el historial en commit en git. 
+Con el comando git reset HEAD, podemos borrar los cambios que hicimos en VS Code y que ya están en git y no queremos que se vayan en el commit, 
+para esto, usamos el comando antes o después del comando git add . pero no depués del commit, porque ya no se podra eliminar. esto solo elimina lo que está en staging. 
