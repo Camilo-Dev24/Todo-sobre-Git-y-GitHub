@@ -1,0 +1,17 @@
+para crear una carpeta se usa comando mkdir <nombre de la carpeta>
+para movernos a esa carpeta usamos cd <nombre de la carpeta>
+dentro de la carpeta creamos archivos con touch ejemplo: touch ensayo.txt
+
+Despues, para activar git usamos el comando git init y se inicia en una carpeta oculta.
+
+Después se escribe en VS Code. Se abre el archivo desde la terminal con el comando code ensayo.txt
+
+A continuación, se escribe los datos o lo que sea que estara dentro del archivo .txt
+
+Para  saber el estado de nuestros documentos en git usamos git status, y nos muestra que debemos añadir.
+
+Para añadir el archivo que creamos, usamos git add . (este es para ñadir todos los archivos).
+Después para dejar el mensaje-commit, utilizamos el comando git commit -m "el mensaje a dejar".
+Recordar que los mesnajes siempre van dentro de comillas. 
+
+Para guardar los cambios en VS Code usamos Control + S, para crear un nuevo archivo control + N y contro + O para elegir un archivo
