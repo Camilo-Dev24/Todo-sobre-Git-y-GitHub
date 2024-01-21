@@ -36,3 +36,9 @@ color, typography, entre otros.
 esto de html y css, es solo para el ejemplo, porque git también muestra los cambios que se hacen en html y en la forma de web que tiene, algo muy sorpendente e intuitivo,
   porque git también muestra con git status las nuevos archivos que creamos y que no han sido añadidos. 
 
+Ya vamos a ver como "volver en el tiempo", pero antes, para borrar un archivo y regresarlo a la primera versión o la versión que queramos que regrese, 
+usamos el comando gir reset <el ID del commit> --hard o soft. Con hard se borra todo en lo que hemos trabajado hasta el luar que decidimos regresar, 
+Soft es un poco más delicado, porque deja cosas en el staging (memoria ram). 
+
+
+
