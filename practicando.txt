@@ -1,19 +1,55 @@
-Importante, si queremos volver a la home, usamos  cd o cd ~
-
-para crear una carpeta se usa comando mkdir <nombre de la carpeta>
+para crear una carpeta se usa comando mkdir <nombre de la carpeta> ej: mkdir practicas
 para movernos a esa carpeta usamos cd <nombre de la carpeta>
 dentro de la carpeta creamos archivos con touch ejemplo: touch ensayo.txt
+Nota* si qeremos borrar un directorio usamos rm -r <nombre del directorio> para borrar archivos usamos rm <nombre del archivo>, para forzar la borrada de
+un archivo se usa rm -rf <nombre del archivo>. es importante tener cuidado con el comando rm porque puede borrar hasta el disco duro. 
 
 Despues, para activar git usamos el comando git init y se inicia en una carpeta oculta.
 
 Después se escribe en VS Code. Se abre el archivo desde la terminal con el comando code ensayo.txt
 
-A continuación, se escribe los datos o lo que sea que estara dentro del archivo .txt
+A continuación, se escribe los datos o lo que sea que estará dentro del archivo .txt
 
 Para  saber el estado de nuestros documentos en git usamos git status, y nos muestra que debemos añadir.
 
 Para añadir el archivo que creamos, usamos git add . (este es para ñadir todos los archivos).
 Después para dejar el mensaje-commit, utilizamos el comando git commit -m "el mensaje a dejar".
-Recordar que los mesnajes siempre van dentro de comillas. 
+Recordar que los mensajes siempre van dentro de comillas. 
 
-Para guardar los cambios en VS Code usamos Control + S, para crear un nuevo archivo control + N y contro + O para elegir un archivo
+Para guardar los cambios en VS Code usamos Control + S, para crear un nuevo archivo control + N y contro + O para elegir un archivo que tengamos. 
+
+Continuando con git, si queremos hacer comparación de cambios entre una versión antigua y otra reciente, 
+usamos el comando git diff commit A commit B. Para tener el ID de los commit, para esto, primero usamos el comando git log, 
+luego copiamos con click derecho los Id que queramos comparar (se recomienda poner el más viejo primero para que la comparacón sea más intuitiva).
+Por otro lado, si queremos hacer comparación de las dos ultimas versiones, usamos comando git show. 
+
+con git log el archivo que tenga (HEAD -> master) significa que es la ultima versión
+
+Esto hace parte de la clase 12 de platzi. Para crear un nuevo archivo le ponemos al guardarlo .html y la terminal reconoce la cabecera. 
+también para cambios esteticos, se reconoce .css 
+
+en html se para abrir html, luego head aquí se pone el titulo, luego body, dentro de este se pone h1 que es el priemr titulo, 
+y <p> que seria para el segundo texto. 
+A continuación se crea un archivo .css. ejemplo estilos.css. aqui se usa como abridor {} y ya solo ponemos dnetro cosas como:
+color, typography, entre otros. 
+
+esto de html y css, es solo para el ejemplo, porque git también muestra los cambios que se hacen en html y en la forma de web que tiene, algo muy sorpendente e intuitivo,
+  porque git también muestra con git status las nuevos archivos que creamos y que no han sido añadidos. 
+
+Ya vamos a ver como "volver en el tiempo", pero antes, para borrar un archivo y regresarlo a la primera versión o la versión que queramos que regrese, 
+usamos el comando gir reset <el ID del commit> --hard o soft. Con hard se borra todo en lo que hemos trabajado hasta el luar que decidimos regresar, 
+Soft es un poco más delicado, porque deja cosas en el staging (memoria ram). 
+los git reset --hard se pueden revertir pero solo si tienes el id del commit, por eso es importante hacer git log,
+y guardar esos commit, por si queremos regresar a una versión que ya no aparece. 
+
+Ahora si vamos a volver en el tiempo, para esto usamos el comando: git checkout <commit al que queremos regresar> archivo.
+Ej: git checkout 4529617194ea96d42c48c1503d07dde2f1b12983 practicando.txt 
+Tambien, si queremos regresar al archivo más reciente, usamos: git checkout maste archivo
+Ej: git checkout master practicando.txt
+
+Digamos que escogimos el primer-más viejo commit del archivo, le hacemos cambios y damos gitt add . este archivo pasa a ser el master o el más reciente, 
+y todos los cambios anteriores, no se daparecen, sino, que quedan atras de este commit, si queremos volver al archivo que estaba más desarrollado o anterior,
+usamos git checkout <el commit al que queremos que sea master> archivo. Y ya, solo debemos hacerle  cambios, guardarlo y añadirlo, 
+y es como si nada hubiera pasado, pero, quedamos con el commit o con una versión diferente con la que habiamos empezado el proyecto,  
+y para volver a ella solo usamos el commit nuevo que conseguimos con git checkout.
+
