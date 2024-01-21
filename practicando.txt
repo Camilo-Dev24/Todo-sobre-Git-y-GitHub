@@ -51,5 +51,6 @@ Digamos que escogimos el primer-más viejo commit del archivo, le hacemos cambio
 y todos los cambios anteriores, no se daparecen, sino, que quedan atras de este commit, si queremos volver al archivo que estaba más desarrollado o anterior,
 usamos git checkout <el commit al que queremos que sea master> archivo. Y ya, solo debemos hacerle  cambios, guardarlo y añadirlo, 
 y es como si nada hubiera pasado, pero, quedamos con el commit o con una versión diferente con la que habiamos empezado el proyecto,  
-y para volver a ella solo usamos el commit nuevo que conseguimos con git checkout.
+y para volver a ella solo usamos el commit nuevo que conseguimos con git checkout.  También sirve por si solo queremos mirar cambios anteriores,
+por si tenemos algun error en el nuevo, solo miramos con el ID al que queremos y volvemos con el master. es muy funcional. 
 
