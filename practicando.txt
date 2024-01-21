@@ -24,3 +24,14 @@ luego copiamos con click derecho los Id que queramos comparar (se recomienda pon
 Por otro lado, si queremos hacer comparación de las dos ultimas versiones, usamos comando git show. 
 
 con git log el archivo que tenga (HEAD -> master) significa que es la ultima versión
+
+Esto hace parte de la clase 12 de platzi. Para crear un nuevo archivo le ponemos al guardarlo .html y la terminal reconoce la cabecera. 
+también para cambios esteticos, se reconoce .css 
+
+en html se para abrir html, luego head aquí se pone el titulo, luego body, dentro de este se pone h1 que es el priemr titulo, 
+y <p> que seria para el segundo texto. 
+A continuación se crea un archivo .css. ejemplo estilos.css. aqui se usa como abridor {} y ya solo ponemos dnetro cosas como:
+color, typography, entre otros. 
+
+esto de html y css, es solo para el ejemplo, porque git también muestra cn git status las nuevos archivos que creamos y que no han sido añadidos. 
+
