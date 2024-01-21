@@ -33,5 +33,6 @@ y <p> que seria para el segundo texto.
 A continuación se crea un archivo .css. ejemplo estilos.css. aqui se usa como abridor {} y ya solo ponemos dnetro cosas como:
 color, typography, entre otros. 
 
-esto de html y css, es solo para el ejemplo, porque git también muestra cn git status las nuevos archivos que creamos y que no han sido añadidos. 
+esto de html y css, es solo para el ejemplo, porque git también muestra los cambios que se hacen en html y en la forma de web que tiene, algo muy sorpendente e intuitivo,
+  porque git también muestra con git status las nuevos archivos que creamos y que no han sido añadidos. 
 
