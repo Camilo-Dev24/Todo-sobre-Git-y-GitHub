@@ -22,3 +22,5 @@ Continuando con git, si queremos hacer comparación de cambios entre una versió
 usamos el comando git diff commit A commit B. Para tener el ID de los commit, para esto, primero usamos el comando git log, 
 luego copiamos con click derecho los Id que queramos comparar (se recomienda poner el más viejo primero para que la comparacón sea más intuitiva).
 Por otro lado, si queremos hacer comparación de las dos ultimas versiones, usamos comando git show. 
+
+con git log el archivo que tenga (HEAD -> master) significa que es la ultima versión
