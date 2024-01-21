@@ -39,6 +39,11 @@ esto de html y css, es solo para el ejemplo, porque git también muestra los cam
 Ya vamos a ver como "volver en el tiempo", pero antes, para borrar un archivo y regresarlo a la primera versión o la versión que queramos que regrese, 
 usamos el comando gir reset <el ID del commit> --hard o soft. Con hard se borra todo en lo que hemos trabajado hasta el luar que decidimos regresar, 
 Soft es un poco más delicado, porque deja cosas en el staging (memoria ram). 
+los git reset --hard se pueden revertir pero solo si tienes el id del commit, por eso es importante hacer git log,
+y guardar esos commit, por si queremos regresar a una versión que ya no aparece. 
 
-
+Ahora si vamos a volver en el tiempo, para esto usamos el comando: git checkout <commit al que queremos regresar> archivo.
+Ej: git checkout 4529617194ea96d42c48c1503d07dde2f1b12983 practicando.txt 
+Tambien, si queremos regresar al archivo más reciente, usamos: git checkout maste archivo
+Ej: git checkout master practicando.txt
 
