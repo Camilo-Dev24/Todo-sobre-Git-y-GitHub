@@ -64,4 +64,6 @@ ni le haremos más cambios o más commits. Si lo queremos añadir de nuevo es so
 
 con git rm <archivo> force, lo borra del escritorio y de git, aunque deja el historial en commit en git. 
 Con el comando git reset HEAD, podemos borrar los cambios que hicimos en VS Code y que ya están en git y no queremos que se vayan en el commit, 
-para esto, usamos el comando antes o después del comando git add . pero no depués del commit, porque ya no se podra eliminar. esto solo elimina lo que está en staging. 
+para esto, usamos el comando antes o después del comando git add . pero no depués del commit, porque ya no se podra eliminar. esto solo elimina lo que está en staging-preparación.
+
+Para estos nuevos comandos, crearé una rama secundaria llamada  nueva. Ahí dejaré los concimientos sobre los comandos que permiten crear y movernos entre ramas. 
