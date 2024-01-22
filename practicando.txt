@@ -71,9 +71,17 @@ a simple vista no se ve la rama, si usamos git show, se muestra las ramas y haci
 
 para movernos entre ramas, usamos git checkout <nombre de la rama>. 
 la rama se crea a partir de el ultimo commit, pero los cambios que se le hagan no se reflejan en la rama master. 
-Si queremos hacer la creación de una rama y movernos a ella, solo usamos git checkout -b <nombre de la rama>
+Si queremos hacer la creación de una rama y movernos a ella (combinar los dos comanos anteriores), solo usamos git checkout -b <nombre de la rama>
 Este muy atento de en que rama está trabajando para no cometer errores.
+Es importante guardar los cambios antes de movernos a la otra ram, porque o sino se borraran.
 
-para juntar los cambios, se utiliza otro comando (todavia por aprender)
+para juntar las dos ramas se utiliza git merge <nombre de la rama> se recomienda que estemos en la rama master para que la nueva linea continue por ahí,
+aunque, despues de hacer los cambios los podemos traer a la rama secundaria con el mismo comando git merge, solo que nos ubicamos, 
+en la rama secundaria, ej: git merge master , ya esos traeria los cambios de master a a la rama nueva
 
-para eliminar una rama usamos: (todavia por aprender)
+si tenemos algún conflicto en el momento del merge, debemos elegir uno de los dos cambios para que suceda el merge, 
+estos conflictos se puedne visualizar en VS Code o en tu visualizador de codigo. 
+Despues de la fusión, es importante hacer el add y el commit. Ej: git commit -am "Resolví el problema de la fusón de ramas"
+
+Otros comandos que nos servirán. Git branch, nos sirve para saber el nombre de las ramas que tenemos. 
+El comando git merge -d <nombre rama> es para eliminar una rama que ya no usaremos, o que consideramos eliminar, si no queremos eliminarla, no hace falta hacerlo. 
