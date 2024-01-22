@@ -85,3 +85,6 @@ Despues de la fusión, es importante hacer el add y el commit. Ej: git commit -a
 
 Otros comandos que nos servirán. Git branch, nos sirve para saber el nombre de las ramas que tenemos. 
 El comando git merge -d <nombre rama> es para eliminar una rama que ya no usaremos, o que consideramos eliminar, si no queremos eliminarla, no hace falta hacerlo. 
+
+Estamos probando para cometer un error
+De esta forma, elegir el que se adapte a nosotros
