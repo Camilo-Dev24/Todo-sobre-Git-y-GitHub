@@ -66,4 +66,13 @@ con git rm <archivo> force, lo borra del escritorio y de git, aunque deja el his
 Con el comando git reset HEAD, podemos borrar los cambios que hicimos en VS Code y que ya están en git y no queremos que se vayan en el commit, 
 para esto, usamos el comando antes o después del comando git add . pero no depués del commit, porque ya no se podra eliminar. esto solo elimina lo que está en staging-preparación.
 
-Para estos nuevos comandos, crearé una rama secundaria llamada  nueva. Ahí dejaré los concimientos sobre los comandos que permiten crear y movernos entre ramas. 
+Los nuevos comandos que son muy cool, es: git branch <nombre de la rama>, con este comando creamos una nueva rama, 
+a simple vista no se ve la rama, si usamos git show, se muestra las ramas y hacia a donde apunta HEAD, que HEAD es la guia, para saber en que rama estamos ubicados y trabajando. 
+
+para movernos entre ramas, usamos git checkout <nombre de la rama>. 
+la rama se crea a partir de el ultimo commit, pero los cambios que se le hagan no se reflejan en la rama master. 
+Si queremos hacer la creación de una rama y movernos a ella, solo usamos git checkout -b <nombre de la rama>
+
+para juntar los cambios, se utiliza otro comando (todavia por aprender)
+
+para eliminar una rama usamos: (todavia por aprender)
