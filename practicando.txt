@@ -72,6 +72,7 @@ a simple vista no se ve la rama, si usamos git show, se muestra las ramas y haci
 para movernos entre ramas, usamos git checkout <nombre de la rama>. 
 la rama se crea a partir de el ultimo commit, pero los cambios que se le hagan no se reflejan en la rama master. 
 Si queremos hacer la creación de una rama y movernos a ella, solo usamos git checkout -b <nombre de la rama>
+Este muy atento de en que rama está trabajando para no cometer errores.
 
 para juntar los cambios, se utiliza otro comando (todavia por aprender)
 
