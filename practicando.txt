@@ -86,4 +86,18 @@ Despues de la fusión, es importante hacer el add y el commit. Ej: git commit -a
 Otros comandos que nos servirán. Git branch, nos sirve para saber el nombre de las ramas que tenemos. 
 El comando git merge -d <nombre rama> es para eliminar una rama que ya no usaremos, o que consideramos eliminar, si no queremos eliminarla, no hace falta hacerlo. 
 
-Sisuceden conflictos, busquemos soluciones y no nos asustemos
+Si suceden conflictos, busquemos soluciones y no nos asustemos.
+
+Para empezar a trabajr en github, tenemos que crar un nuevo repositorio, ponerle nombre y una descripción, elegimos si lo dejamos privado o público, 
+y es recomendable señalar ADD a README file, esto es para que otros nos lean. 
+
+-ahora lo que hay que es hacer es que debemos conectar el remositorio local con el remoto. 
+  Para la primera vez, se utiliza git remote add origin <http de la SSH>.  esto es para conectar los repositorios. 
+Con git remote -v confirmamos la exitencia del putch y el fetch. 
+
+Para fusionar los repositorios por primera vez y enviar lo que tiene el local y traer los que tiene el remoto, 
+usamos primero comando git push origin main y después comando:git pull origin main. Con esto ya quedan sincronizados. 
+Después ya si se envia todo lo que tiene el repositorio local y los cambios que se hagan en el futuro con comando: git push origin main. 
+Y los mismo, para traer los cambios que hagamos en el repositorio remoto (GitHub) comando: git pull origin main
+
+Nota* es buena practica antes de mandar al repositorio remoto, traer los cambios que están allá, luego si hicimos cambios en el local poner el commit y ya si enviarlos al remoto. 
