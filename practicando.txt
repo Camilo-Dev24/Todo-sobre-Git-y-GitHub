@@ -100,4 +100,7 @@ usamos primero comando: git push origin main y después comando:git pull origin 
 Después ya si se envia todo lo que tiene el repositorio local y los cambios que se hagan en el futuro con comando: git push origin main. 
 Y los mismo, para traer los cambios que hagamos en el repositorio remoto (GitHub) comando: git pull origin main
 
-Nota* es buena practica antes de mandar al repositorio remoto, traer los cambios que están allá, luego si hicimos cambios en el local poner el commit y ya si enviarlos al remoto. 
+Nota* es buena practica antes de mandar al repositorio remoto, traer los cambios que están allá, luego si hicimos cambios en el local poner el commit y ya si enviarlos al remoto.
+Nota* En caso de que el repositotio local se niegue a fusionarse con el remoto, utiliza comand: git pull origin main --allow-unrelated-histories
+
+Y si ya estás en github editando el archivo, recuerda dejar el commit, solo presiona en la parte que dice "Commit change".
