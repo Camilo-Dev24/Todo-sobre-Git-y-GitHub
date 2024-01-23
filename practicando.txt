@@ -104,3 +104,5 @@ Nota* es buena practica antes de mandar al repositorio remoto, traer los cambios
 Nota* En caso de que el repositotio local se niegue a fusionarse con el remoto, utiliza comand: git pull origin main --allow-unrelated-histories
 
 Y si ya estás en github editando el archivo, recuerda dejar el commit, solo presiona en la parte que dice "Commit change".
+
+Nota* Recuerda que estando en GitHub puede ver quien hizo cambios, hace cuanto, el historial (blame, 24 commit)
