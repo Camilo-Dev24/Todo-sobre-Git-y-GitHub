@@ -119,3 +119,10 @@ Inclusive hay otro camando que nos muestra lo mismo pero de una forma más exten
 4-para enviar un tag al repositorio usamos git push origin --tags
 5-para elminar un tag de git usamos git delete -d <nombre del tag>
 6- git push origin :refs/tags/nombretag, esto es para eliminar el tag de github 
+
+Generalmente el trabajo en GitHub cuando trabajamos en grupo se divide en la parte de arriba y la de abajo. Lo de arriba sería la ram header y lo de abajo seria la rama footer. 
+Con comando : git show-branch --all vemos todas las ramas que existen y su historia, con el comando: gitk, vemos lo mismo, soloque en una interfaz más gráfica
+-Para enviar las ramas al repistorio local, usamos git push origin <nombre rama>
+-Para eliminar la rama del repositorio de GitHub, usamos comando: git push origin --delete
+Así se crean ramas de trabajo independiente que luego se juntarán con el merge. En ocasiones hay ramas que solo dejeamos en nustro repositorio remoto. 
+
