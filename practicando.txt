@@ -126,3 +126,11 @@ Con comando : git show-branch --all vemos todas las ramas que existen y su histo
 -Para eliminar la rama del repositorio de GitHub, usamos comando: git push origin --delete
 Así se crean ramas de trabajo independiente que luego se juntarán con el merge. En ocasiones hay ramas que solo dejeamos en nustro repositorio remoto. 
 
+Generalmente, cualquier persona puede descargar el trabajo que tengo como público en GitHub, sin embargo, el hecho de que lo descargue, no quiere decir que pueda editar. 
+Para editar, debemos invitarlo a colabrorar. Para esto nos ubicamos en la pagina principal del repositorio de GitHub, 
+Agí, buscamos settings, y en la parte lateral dar clic en Manage Acces, y clic en invitar colaborador. se teclea el nombre o correo de la persona que invitaré y le doy enviar invitación o añadir al repositorio. 
+-La persona recibira un correo y apenas lo acepte podra editar. 
+-Para que la persona que colabora, descargue el contenido, debe ir al repositorio que lo invito y dar en donde dice Code y copiar el HTTO o SSH en dado caso, 
+y luego utilizar el en git comando: git clone <URL hhttp O SSH>, y ya tendremos los archivos descargados. 
+Se recomienda guardar esto en una carpeta con nombre y demás. La persona que descarga, no tiene que empezar nada con git init, ni demás protocolos de inicio, 
+pero si seguir lo demás de commit, revisar, push an pull, etc. 
