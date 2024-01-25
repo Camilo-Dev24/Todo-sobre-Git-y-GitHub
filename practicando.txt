@@ -103,6 +103,19 @@ Y los mismo, para traer los cambios que hagamos en el repositorio remoto (GitHub
 Nota* es buena practica antes de mandar al repositorio remoto, traer los cambios que están allá, luego si hicimos cambios en el local poner el commit y ya si enviarlos al remoto.
 Nota* En caso de que el repositotio local se niegue a fusionarse con el remoto, utiliza comand: git pull origin main --allow-unrelated-histories
 
-Y si ya estás en github editando el archivo, recuerda dejar el commit, solo presiona en la parte que dice "Commit change".
+Y si ya estás en github editando el archivo, recuerda dejar el commit después de los cambios, solo presiona en la parte que dice "Commit change".
 
 Nota* Recuerda que estando en GitHub puede ver quien hizo cambios, hace cuanto, el historial (blame, 24 commit)
+
+Nota* para crear un alias se usa: alias <el alias que usaremos> "el comando"
+
+                  iMPORTANTE: para ver para metros de configuración: config -l, para hacer cambios en el correo: git config --global user.email "email"
+
+Hablaremos sobre los tags, sirven para dejar un mensaje de la versión de un archivo para que el equipo este enterad. Para crearlos hay que seguir una serie de pasos. 
+1- Con comando: git log --all --graph --decorate --oneline se muestran las historias de todos los commits y las dirreciones que ha tomado las ramas, de manera compacta, de aqui sale el HASH o el número compato para hacer el tag, 
+Inclusive hay otro camando que nos muestra lo mismo pero de una forma más extensa: git log --all -graph.
+2-Para crear un tag:  git tag -a <nombre tag > -m "mensaje" Hash, se recomienda porner el nombre del tag como v1.0 v2.0 etc. 
+3-Con git tag revisamos la lista de tags que tenemos o que creamos. 
+4-para enviar un tag al repositorio usamos git push origin --tags
+5-para elminar un tag de git usamos git delete -d <nombre del tag>
+6- git push origin :refs/tags/nombretag, esto es para eliminar el tag de github 
