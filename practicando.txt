@@ -132,5 +132,5 @@ Agí, buscamos settings, y en la parte lateral dar clic en Manage Acces, y clic 
 -La persona recibira un correo y apenas lo acepte podra editar. 
 -Para que la persona que colabora, descargue el contenido, debe ir al repositorio que lo invito y dar en donde dice Code y copiar el HTTO o SSH en dado caso, 
 y luego utilizar el en git comando: git clone <URL hhttp O SSH>, y ya tendremos los archivos descargados. 
-Se recomienda guardar esto en una carpeta con nombre y demás. La persona que descarga, no tiene que empezar nada con git init, ni demás protocolos de inicio, 
-pero si seguir lo demás de commit, revisar, push an pull, etc. 
+Se recomienda guardar esto en una carpeta con nombre y demás. La persona que descarga, no tiene que empezar nada con git init, ni demás protocolos de inicio, pero si seguir lo demás de commit, revisar, push an pull, etc. Es importante recordar moverse a la carpeta del trabajo que descargamos de GitHub 
+
