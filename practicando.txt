@@ -115,7 +115,7 @@ Hablaremos sobre los tags, sirven para dejar un mensaje de la versión de un arc
 1- Con comando: git log --all --graph --decorate --oneline se muestran las historias de todos los commits y las dirreciones que ha tomado las ramas, de manera compacta, de aqui sale el HASH o el número compato para hacer el tag, 
 Inclusive hay otro camando que nos muestra lo mismo pero de una forma más extensa: git log --all -graph.
 2-Para crear un tag:  git tag -a <nombre tag > -m "mensaje" Hash, se recomienda porner el nombre del tag como v1.0 v2.0 etc. 
-3-Con git tag revisamos la lista de tags que tenemos o que creamos. 
+3-Con git tag revisamos la lista de tags que tenemos o que creamos. y para ver que el tag quedara miramos con: git tag --all --graph. 
 4-para enviar un tag al repositorio usamos git push origin --tags
 5-para elminar un tag de git usamos git delete -d <nombre del tag>
 6- git push origin :refs/tags/nombretag, esto es para eliminar el tag de github 
