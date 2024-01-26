@@ -153,3 +153,8 @@ A la persona invitada, le llega un mensaje del pull requests o simplemnete ve qu
  Si nos rechazaron los cambios, vamos y orgnizamos en nuestro repositorio local, hacemos el commit y enviamos con push origin , recordar primero hacer un pull. 
  Dejamos un mensaje en conversaciones de si me aceptan los cambios para hacer el merge. 
  el ambiente de github, nos deplega cuatro ventanas en las que podemos tener conversación, ver los commits, los cambios y los checks. 
+
+Si ya nos aprueban los cambios, las persona encargada del proyecto o el DevOps se encarga de hacer el merge. Y ya es decisión de el lider o del equipo si borran la rama que crearon para solucionar el conflicto, 
+es buena practica crear ramas para solucionar asuntos, y si no queremos llenarnos de ramas, está bien borrarlas. 
+Para hacer el merge, solo se debe ir a la pestaña de conversación del P.R y darle en merge pull requests. y ya, ahí también nos sale la opción de borrar la rama. 
+Es importante recordar traer a el repositorio local los cambios nuevos que se hicieron en la  rama main con el P.R. 
