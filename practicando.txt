@@ -142,3 +142,14 @@ Una vez la enviamos, vamos al repositorio remoto y creamos un nuevo pull request
 ej de como apareceria: Base: main <- compare: fixes, así se vería en git.
 Luego lo que haremos será irno a git, ubicarno en la rama fixes, y hacer los cambios respectivos, guardar, hacer el commit con el mensaje sobre lo que se hizo o no debia hacerse en la rama main,
 y por ultimo enviar al repostorio remoto, a la rama fixes. 
+Una vez enviamos al repositorio, debemos ir a GitHub y  darle en create pull request. Estando ahí pedemos agregar un mensaje de lo que se hizo o lo que no se debio hacer. 
+Y Antes de crearlo-enviarlo, podemos agregar a la persona a la que queremos que vea, corrija o acepte los cambios que hicimos o que debe hacer, para eso damos en Reviewers y seleccionamos la persona que deseamos, 
+y ya si podemos crear con tranquilidad para que el otro revise. 
+Nota* un pull requests puede ser un solo commit, o pueden ser muchos commits de cambios o solicitudes. 
+A la persona invitada, le llega un mensaje del pull requests o simplemnete ve que hay un nuevo pull requests en el proyecto, lo abrimos y nos dirijimos donde dice file changed (archivo modificado), miramos los cambios o la solicitud, una vez lo hagamos, 
+ le damos en Review changes, para seleccionar la opción de comment que es solo para dejar un mensaje o  aceptar (approve) o de no aceptar (request changes), 
+ en cualquiera de los casos hay que deja un porque acepto, o que se debría hacer, etc, segun el caso. Un vez tengamos el menaje, le damos en submit review para enviar el mensaje. 
+
+ Si nos rechazaron los cambios, vamos y orgnizamos en nuestro repositorio local, hacemos el commit y enviamos con push origin , recordar primero hacer un pull. 
+ Dejamos un mensaje en conversaciones de si me aceptan los cambios para hacer el merge. 
+ el ambiente de github, nos deplega cuatro ventanas en las que podemos tener conversación, ver los commits, los cambios y los checks. 
