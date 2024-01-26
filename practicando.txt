@@ -128,9 +128,17 @@ Así se crean ramas de trabajo independiente que luego se juntarán con el merge
 
 Generalmente, cualquier persona puede descargar el trabajo que tengo como público en GitHub, sin embargo, el hecho de que lo descargue, no quiere decir que pueda editar. 
 Para editar, debemos invitarlo a colabrorar. Para esto nos ubicamos en la pagina principal del repositorio de GitHub, 
-Agí, buscamos settings, y en la parte lateral dar clic en Manage Acces, y clic en invitar colaborador. se teclea el nombre o correo de la persona que invitaré y le doy enviar invitación o añadir al repositorio. 
+Ahí, buscamos settings, y en la parte lateral dar clic en Manage Acces, y clic en invitar colaborador. se teclea el nombre o correo de la persona que invitaré y le doy enviar invitación o añadir al repositorio. 
 -La persona recibira un correo y apenas lo acepte podra editar. 
 -Para que la persona que colabora, descargue el contenido, debe ir al repositorio que lo invito y dar en donde dice Code y copiar el HTTO o SSH en dado caso, 
 y luego utilizar el en git comando: git clone <URL hhttp O SSH>, y ya tendremos los archivos descargados. 
 Se recomienda guardar esto en una carpeta con nombre y demás. La persona que descarga, no tiene que empezar nada con git init, ni demás protocolos de inicio, pero si seguir lo demás de commit, revisar, push an pull, etc. Es importante recordar moverse a la carpeta del trabajo que descargamos de GitHub 
 
+Continuamos con algo importante, el pull requests, esto sirve para hacer arreglos en una rama que se crea unicamente para solucionar cosa que no debrian ir, 
+es por esto que el pull requess se hace. Para realizarlo de forma correcta, primero hay que ubicarnos en nuestro repositorio local en la rama main y hacer un pull origin a la rama remota por si hay cambios. 
+A continuación se crea la rama nueva, la cual queda con los mismos contenidos de la rama main. La rama nueva, pongamole fixes, se envia al repositorio remoto.
+
+Una vez la enviamos, vamos al repositorio remoto y creamos un nuevo pull request, donde se compare la main y la fixes, 
+ej de como apareceria: Base: main <- compare: fixes, así se vería en git.
+Luego lo que haremos será irno a git, ubicarno en la rama fixes, y hacer los cambios respectivos, guardar, hacer el commit con el mensaje sobre lo que se hizo o no debia hacerse en la rama main,
+y por ultimo enviar al repostorio remoto, a la rama fixes. 
