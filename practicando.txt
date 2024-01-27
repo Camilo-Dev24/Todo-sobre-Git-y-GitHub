@@ -181,7 +181,9 @@ En su lugar, alguien con más trayectoria o más profesional, usa la siguiente f
 usamos el comando: git remote add upstream HHTP- Del R.original. (el nombre de upstream es el que se usa en la industria, pero se puede usar otro).
 2-Usamos el comando: git pull upstream main, esto es para traer los cambios del repositorio remoto original, a nuestro repositorio local. 
 3- Usamos comando:git push origin main, para enviar los cambios a nustro repositorio remoto. 
-listo, Esta es la forma de usar fork, esos son los pasos en cada caso. Recuerda que fork solo funciona con archivos púplicos, porque los privados no los vemos. 
+listo, Esta es la forma de usar fork, esos son los pasos en cada caso. Recuerda que fork solo funciona con archivos púplicos, porque los privados no los vemos.
+
+-inclusive si hacemos un merge con la persona que nos lo sugirio, GitHub nos da la opción de revertir los cambios. 
 
 
 
