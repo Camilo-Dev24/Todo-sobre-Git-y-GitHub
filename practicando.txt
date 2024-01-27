@@ -158,3 +158,15 @@ Si ya nos aprueban los cambios, las persona encargada del proyecto o el DevOps s
 es buena practica crear ramas para solucionar asuntos, y si no queremos llenarnos de ramas, está bien borrarlas. 
 Para hacer el merge, solo se debe ir a la pestaña de conversación del P.R y darle en merge pull requests. y ya, ahí también nos sale la opción de borrar la rama. 
 Es importante recordar traer a el repositorio local los cambios nuevos que se hicieron en la  rama main con el P.R. 
+
+En la clase 29, hablaremos sobre los fork, pero primero, vamos a describir como borrar un colaborador: 
+Vamos a nustro repositorio, al proyecto al que queremos retirar a la(s) persona(s), nos dirjimos al las settings del proyecto y vamos a donde dice collaborators, y damos en remover (en la persona que vamos a sacar). 
+
+Para que se nos notifique de un proyecto que nos interesa, nos metemos en el y vamos donde dice unwatch y le damos all activity y pinchamos en la estrellita, de esta forma estaremos enterados de todo.
+El fork se utiliza para participar en un proyecto del que no somos colaboradores, podemos enviar un commit, un pull request como cosas que podrian hacerse. pero solo la persona dueña del proyecto, puede aceptar los cambios.
+Pero para esto, primero debemos ubicarnos en el repositorio que nos interesa, vamos a la opción fork y ya de ahí seguimos los pasos, 
+Cuando estemos creando el fork, desmarcar la opción que nos dice copy the main branch only, y de esa forma tendremos todas las ramas del proyecto y ya le damos en create fork y quedamos con la versión clonada en nustro poropio repositorio. 
+IMPORTANTE: recuerda que para traer este repositotio remoto a tu repositorio local, utilizamos comando. git clone http-repositorio clonado nuestro. antes de hacerlo, creamos una carpeta en nuestro repositorio local, para ubicar los archivos.
+
+
+
