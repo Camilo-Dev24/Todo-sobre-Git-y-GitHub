@@ -165,8 +165,24 @@ Vamos a nustro repositorio, al proyecto al que queremos retirar a la(s) persona(
 Para que se nos notifique de un proyecto que nos interesa, nos metemos en el y vamos donde dice unwatch y le damos all activity y pinchamos en la estrellita, de esta forma estaremos enterados de todo.
 El fork se utiliza para participar en un proyecto del que no somos colaboradores, podemos enviar un commit, un pull request como cosas que podrian hacerse. pero solo la persona dueña del proyecto, puede aceptar los cambios.
 Pero para esto, primero debemos ubicarnos en el repositorio que nos interesa, vamos a la opción fork y ya de ahí seguimos los pasos, 
-Cuando estemos creando el fork, desmarcar la opción que nos dice copy the main branch only, y de esa forma tendremos todas las ramas del proyecto y ya le damos en create fork y quedamos con la versión clonada en nustro poropio repositorio. 
-IMPORTANTE: recuerda que para traer este repositotio remoto a tu repositorio local, utilizamos comando. git clone http-repositorio clonado nuestro. antes de hacerlo, creamos una carpeta en nuestro repositorio local, para ubicar los archivos.
+Cuando estemos creando el fork, desmarcar la opción que nos dice copy the main branch only, y de esa forma tendremos todas las ramas del proyecto y ya le damos en create fork y quedamos con la versión clonada en nuestro poropio repositorio. 
+IMPORTANTE: recuerda que para traer este repositorio remoto a tu repositorio local, utilizamos comando: git clone http-repositorio clonado nuestro. antes de hacerlo, creamos una carpeta en nuestro repositorio local, para ubicar los archivos. 
+
+Para que podamos hacer un pull requests con el archivo original, primero debemos agregar los cambios que creamos debe tener el archivo original en nuestro archivo clonado.
+apenas hagamos los cambios, en nuestro repositorio remoto y local, Github nos arrojara la opción de hacer un pull requests con el archivo original.
+Ya sabemos como funciona el pull request, dejamos el comentario de los cambios que hicimos que consideramos deberia tener ese proyecto. 
+Recuerda: en este caso de fork, la persona puede contestarnos o simplemente nunca hacerlo. Tambien puede contestarnos,
+e inclusive hacer merge con los cambios del pull requests que yo creé y hacer el merge con su rama. 
+
+Recordar que como nuestro archivo es clonado, cada cambio que se haga en el archivo original, se nos notificará, pero no se actualizará nustro archivo clonado. 
+Github nos arroja una opción para traer los cambios a nustra archivo clonado, pero esa opción es más de novatos. 
+En su lugar, alguien con más trayectoria o más profesional, usa la siguiente forma para traer los cambios a su repositorio. 
+1- vamos al repositorio original del archivo, copiamos el HTTP y vamos a nuestro repositorio local, como necesitamos un nuevo repositorio local que reciba los cambios del repositorio original remoto y nos lo traiga al nuestro local, 
+usamos el comando: git remote add upstream HHTP- Del R.original. (el nombre de upstream es el que se usa en la industria, pero se puede usar otro).
+2-Usamos el comando: git pull upstream main, esto es para traer los cambios del repositorio remoto original, a nuestro repositorio local. 
+3- Usamos comando:git push origin main, para enviar los cambios a nustro repositorio remoto. 
+listo, Esta es la forma de usar fork, esos son los pasos en cada caso. Recuerda que fork solo funciona con archivos púplicos, porque los privados no los vemos. 
+
 
 
 
