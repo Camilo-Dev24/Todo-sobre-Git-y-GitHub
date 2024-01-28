@@ -200,3 +200,8 @@ Clse 33, Readme.md, es una presentación de nuestro proyecto que queda en el rep
 o usar un editor online, el editr en linea es mucho más comodo. Un editor onliene bueno es M Editor .md oper source online markdown editor. 
 Para hacer en e online, solo hay que escribir y agregar lo que consideremos, una vez terminemos, 
 solo hay que copiar y pegar en nuestro archvio README.md ue tenemos en VS CODE. Ya guardamos los cambios en git y hacemos el push a GitHub. 
+
+Pra hacer comando : git rebase <nombre rama>, se debe primero crear una rama en la que queramos hacer los cambios, y digamos que en la rama main, 
+se hacen algunos cambios más, ambas tienen cosas diferentes, entonces para unir, primero nos ubicamos en la rama creada, 
+digamos que se llama experimento, entonces hacemos git checkout experimento, y hacemos: git rebase main, primero hay que hacer el rebase a la rama que se borrara, 
+luego pasamos a main con git checkout, y hacemos git rebase experiemnto, y ya los cambios se unen y la rama se borra. 
