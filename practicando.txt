@@ -185,6 +185,14 @@ listo, Esta es la forma de usar fork, esos son los pasos en cada caso. Recuerda 
 
 -inclusive si hacemos un merge con la persona que nos lo sugirio, GitHub nos da la opción de revertir los cambios. 
 
+-Profundicemos en otro aspecto, que seria .gitignore, funciona para no subir más que todo los archivos binarios como fotos o imagenes a nuestro repositotio remoto,
+ya que estos son muy pesados,también se utiliza para otras extensiones y demás cosas, si queremos ver mejores ejemplo, 
+miremos otros repositorio de grandes compañias y miremos en su carpeta de .gitignore y veremos ejemplos muy valiosos para aprender
+ Para hacer el .gitignore, primero debemos crear un nuevo archivo en VS Code, 
+debemos guardarlo en la carpeta de nuestro proyecto y Solo debemos nombrarlo .gitignore y ya VS Code entenderá. 
+y lo unico que debemos ponerle es la extensión que queremos que ignore-que no suba al repositotio remoto. EJ: *.jpg, el * significa todo tipo de archivos, así ignorará el 100 %
 
-
+Una vez hecho esto, hay que agregarlo a nustro repositotio remoto, solo debemos hacer comando: git add .gitignore, y ya queda. recordar agregar commit. 
+Y adespúes hacemos un pull y luego un push y ya queda nuestra carpeta .gitignore. eso es todo
+recordar primero agregar la extensión que queremos qu no se suba y ya después el archivo. 
 
