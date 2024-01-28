@@ -196,3 +196,7 @@ Una vez hecho esto, hay que agregarlo a nustro repositotio remoto, solo debemos 
 Y adespúes hacemos un pull y luego un push y ya queda nuestra carpeta .gitignore. eso es todo
 recordar primero agregar la extensión que queremos qu no se suba y ya después el archivo. 
 
+Clse 33, Readme.md, es una presentación de nuestro proyecto que queda en el repositorio remoto, se puede abrir la carpeta en en VS Code y editarlo,
+o usar un editor online, el editr en linea es mucho más comodo. Un editor onliene bueno es M Editor .md oper source online markdown editor. 
+Para hacer en e online, solo hay que escribir y agregar lo que consideremos, una vez terminemos, 
+solo hay que copiar y pegar en nuestro archvio README.md ue tenemos en VS CODE. Ya guardamos los cambios en git y hacemos el push a GitHub. 
