@@ -239,3 +239,15 @@ El comando grep, ayuda a hacer busqueda de palabras, y lo muestra en la ubicaci�
 para buscar por numero de lineas en el que esta la palabra, se usa: git grep -n <palabra> 
 y para buscar por cantidad de veces por archivo se usa: git grep -c <palabra>, 
 Y si queremos buscar los commits que esten relacionados con alguna palabra, usamos: git log -S <palabra>, La s debe ser mayuscula.
+
+Algunos comandos que nos sirven de recurso cuando trabajamos con otros, comando. git shortlog -sn: muestra cuantos commits han hecho cada miembro del equipo,
+-git shortlog -sn --all, muestra cuantos commits han hecho cada miembro del equipo, hasta los que han sido eliminados. 
+-git shortlog -sn --all --no-merge, muestra cuantos commits han hecho cada miembro del equipo, quitando los eliminados y el merge. 
+-git blame <archivo>, muestraquien hizo cada cosa linea por linea. 
+-git <comando> --help, muestra como funciona el comando, es un manual. 
+-git blame <archivo> Llinea inicial,linea final, mueestra quien hizo cada cosa linea por linea, indicandole desde que linea, EJ: blame blogpost.html -L3,35
+-git branch -r, se muestran todas las ramas remotas.
+-git branch -a, se muetsran todas las ramas, remotas y locales.
+
+NOTA* en nuestros repositorios de GitHub, tenemos una opción que nos muestra todo sobre el tiempo, los cambios, gráficos, etc, 
+la opción es: Insights, ahí aparece todo 
