@@ -214,3 +214,14 @@ Se puede crear más de un stash. Y si queremos crear una rama con el stash hecho
 El comando: git clean, sirve para eliminar los archivos no deseados, o para eliminar los archivos que por error se crearon, 
 o que algo más lo creo y hacen ver nuestro repositorio desorganizado, para mirar los archivos a eliminar, una especie de simulación de lo que se borra,
 se usa el comando: git clean -n, y para borrar el comando: git clean -f, los archivos ignorados con gitignore, no se borraran.
+
+El comando: git cherry-pick <HASH>, se considera una mala practica. Funciona creando una nueva rama, o en una rama ya existente traer cambios,
+lo que se traen son los commits, y los cambios que estos contienen, se señala un commit o varios, para varios commits,
+se usa el comando git cherry-pick <HASH 1> <HASH2> para sacar los hahs, se usa: git log --oneline.  
+apenas tengamos los cambios que queriamos, podemos unirlo p unirlos a la rama main o a la rama a la que queremos unirnos. 
+Lo que tiene este comando, es que no deja evidencia de quien hizo el cambio, ni la hora, etc,
+Unicamente deja un nuevo commit que se une en la parte más reciente de la rama, como si ese commit se hubiera hecho en esa rama.
+Es decir, no deja historial de union, de merge. 
+
+Nota* no es tan recomendada ya que puede generar duplicaciones, por eso la rama principal con la que pretendemos hacer 
+cherry-pick, no debe tener muchos commit de diferencia.
