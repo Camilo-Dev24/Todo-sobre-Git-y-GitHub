@@ -218,10 +218,15 @@ se usa el comando: git clean -n, y para borrar el comando: git clean -f, los arc
 El comando: git cherry-pick <HASH>, se considera una mala practica. Funciona creando una nueva rama, o en una rama ya existente traer cambios,
 lo que se traen son los commits, y los cambios que estos contienen, se señala un commit o varios, para varios commits,
 se usa el comando git cherry-pick <HASH 1> <HASH2> para sacar los hahs, se usa: git log --oneline.  
-apenas tengamos los cambios que queriamos, podemos unirlo p unirlos a la rama main o a la rama a la que queremos unirnos. 
+apenas tengamos los cambios que queriamos, podemos unirlo o unirlos a la rama main o a la rama a la que queremos unirnos. 
 Lo que tiene este comando, es que no deja evidencia de quien hizo el cambio, ni la hora, etc,
 Unicamente deja un nuevo commit que se une en la parte más reciente de la rama, como si ese commit se hubiera hecho en esa rama.
 Es decir, no deja historial de union, de merge. 
 
 Nota* no es tan recomendada ya que puede generar duplicaciones, por eso la rama principal con la que pretendemos hacer 
 cherry-pick, no debe tener muchos commit de diferencia.
+
+El comando: git reflog,  nos muestra todo lo que hemos hecho, hasta lo borrado, ahí siempre tendremos un registro de lo que hemos hecho.
+El registro dura cerca de 90 días. Por lo que si cometimos un error o paso algo que no pudimos arreglar, podemos volver a versiones anteriores,
+Esto es en caso de emergencia, para esto se usa comando: git reset --hard <HASH O HEAD>. Hy que tener cuidado en usarlo, 
+porque nos regresa a la versión que queremos pero nos elimina todo. 
