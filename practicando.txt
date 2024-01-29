@@ -207,6 +207,10 @@ digamos que se llama experimento, entonces hacemos git checkout experimento, y h
 luego pasamos a main con git checkout, y hacemos git rebase experiemnto, y ya los cambios se unen y la rama se borra. 
 
 El comando: git stash es uno de los comandos más utiles y usados, ya que se usa para cambios leves, comparaciones y asuntos no tan complejos que requieran crear una rama. 
-El comando crea una versión de lo que acabamos de hacer y la deja en espera, para deshacer lo que está en espera y vuelva l documento, 
+El comando crea una versión de lo que acabamos de hacer y la deja en espera, para deshacer lo que está en espera y vuelva al documento, 
 usamos comando: git stash pop. y ya con esto podemos probar y jugar para mirar. si queremos ver la lista de stash, se usa: git stash list. 
-Se puede crear más de un stash. Y si queremos crear una rama con el stash heco, solo se necesita comando: git stash branch <N.rama>
+Se puede crear más de un stash. Y si queremos crear una rama con el stash hecho, solo se necesita comando: git stash branch <N.rama>
+
+El comando: git clean, sirve para eliminar los archivos no deseados, o para eliminar los archivos que por error se crearon, 
+o que algo más lo creo y hacen ver nuestro repositorio desorganizado, para mirar los archivos a eliminar, una especie de simulación de lo que se borra,
+se usa el comando: git clean -n, y para borrar el comando: git clean -f, los archivos ignorados con gitignore, no se borraran.
