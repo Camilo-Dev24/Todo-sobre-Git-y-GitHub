@@ -230,3 +230,7 @@ El comando: git reflog,  nos muestra todo lo que hemos hecho, hasta lo borrado, 
 El registro dura cerca de 90 días. Por lo que si cometimos un error o paso algo que no pudimos arreglar, podemos volver a versiones anteriores,
 Esto es en caso de emergencia, para esto se usa comando: git reset --hard <HASH O HEAD>. Hy que tener cuidado en usarlo, 
 porque nos regresa a la versión que queremos pero nos elimina todo. 
+
+El comando: git commit --amend, sirve con el commit más reciente, cuando ya enviamos un commit y nos falto información o le queremos cambiar el nombre, 
+el caso que sea, usamos ese comando, y lo que esto hace es enviar un nuevo commit con los nuevos cambios y los anteriores, 
+por así decir, reescribe el commit anterior, por no queda hisotrial de él. solo queda el nuevo commit. 
