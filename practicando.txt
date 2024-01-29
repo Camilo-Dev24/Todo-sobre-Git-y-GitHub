@@ -205,3 +205,8 @@ Pra hacer comando : git rebase <nombre rama>, se debe primero crear una rama en 
 se hacen algunos cambios más, ambas tienen cosas diferentes, entonces para unir, primero nos ubicamos en la rama creada, 
 digamos que se llama experimento, entonces hacemos git checkout experimento, y hacemos: git rebase main, primero hay que hacer el rebase a la rama que se borrara, 
 luego pasamos a main con git checkout, y hacemos git rebase experiemnto, y ya los cambios se unen y la rama se borra. 
+
+El comando: git stash es uno de los comandos más utiles y usados, ya que se usa para cambios leves, comparaciones y asuntos no tan complejos que requieran crear una rama. 
+El comando crea una versión de lo que acabamos de hacer y la deja en espera, para deshacer lo que está en espera y vuelva l documento, 
+usamos comando: git stash pop. y ya con esto podemos probar y jugar para mirar. si queremos ver la lista de stash, se usa: git stash list. 
+Se puede crear más de un stash. Y si queremos crear una rama con el stash heco, solo se necesita comando: git stash branch <N.rama>
